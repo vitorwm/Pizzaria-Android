@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalhesActivity">
+
+    <TextView
+        android:id="@+id/tvDetalhes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Detalhes da pizza"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="253dp" />
+
+    <TextView
+        android:id="@+id/tvNome"
+        android:layout_width="254dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="116dp"
+        android:text="Nome da Pizza:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#5A5A5A"
+        android:tooltipText="Nome da Pizza:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDetalhes" />
+
+    <TextView
+        android:id="@+id/tvQtde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autoText="false"
+        android:text="Quantidade de pizzas em estoque:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="@+id/tvNome"
+        app:layout_constraintTop_toBottomOf="@+id/tvNome"
+        tools:text="Quantidade de pizzas em estoque:" />
+
+    <TextView
+        android:id="@+id/tvIngrediente1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ingrediente Principal"
+        app:layout_constraintStart_toStartOf="@+id/tvQtde"
+        app:layout_constraintTop_toBottomOf="@+id/tvQtde"
+        tools:text="Ingrediente Principal" />
+
+
+    <TextView
+        android:id="@+id/tvIngrediente2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ingrediente Secundário"
+        app:layout_constraintStart_toStartOf="@+id/tvIngrediente1"
+        app:layout_constraintTop_toBottomOf="@+id/tvIngrediente1"
+        tools:text="Ingrediente Secundário" />
+
+    <TextView
+        android:id="@+id/tvIngrediente3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ingrediente Terciário"
+        app:layout_constraintStart_toStartOf="@+id/tvIngrediente2"
+        app:layout_constraintTop_toBottomOf="@+id/tvIngrediente2"
+        tools:text="Ingrediente Terciário" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
